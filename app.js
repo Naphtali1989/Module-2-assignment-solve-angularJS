@@ -67,7 +67,7 @@
         // }
 
         service.removeAvailableItem = (idx) => {
-            const currItem = items.splice(idx, 1)[0];
+            const currItem = availableItems.splice(idx, 1)[0];
             service.addToBought(currItem);
         };
     }

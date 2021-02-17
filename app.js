@@ -59,12 +59,8 @@
         }
 
         service.addToBought = (item) => {
-            boughtItems.push(item);
+            boughtItems.unshift(item);
         }
-
-        // service.addToAvailable = (item) =>{
-        //     availableItems.push(item)
-        // }
 
         service.removeAvailableItem = (idx) => {
             const currItem = availableItems.splice(idx, 1)[0];
